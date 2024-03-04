@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETRIS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="wrap">
+
+   
+    <div class="tetris-title-box">
+        <!-- <h1>TETRIS</h1> -->
+        <span style="--i: 1"><p>T</p></span>
+        <span style="--i: 2">E</span>
+        <span style="--i: 3">T</span>
+        <span style="--i: 4">R</span>
+        <span style="--i: 5">I</span>
+        <span style="--i: 6">S</span>
+    </div>
+
+    <div class="grid"></div>
+
+    <div class="container">
+      score:
+      <div class="score">0</div>
+      <!-- <button class="newgame">New game</button> -->
+     </div>
+
+     <div class="overlay">
+      Oops..game over.
+      <br>
+      your score:
+      <div class="scorefinal"></div>
+      <button class="restart">Restart?</button>
+    </div>
+
+  </section>
+
+  <audio autoplay id="music"> 
+    <source src="muzyka-tetris.mp3" type="audio/mpeg" />  
+  </audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
